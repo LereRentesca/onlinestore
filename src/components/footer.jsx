@@ -1,8 +1,8 @@
-
+import './styles/footer.css';
 
 function Footer(){
     return (
-        <div>Footer</div>
+        <div>Luis E. Renteria</div>
     );
 }
 
