@@ -4,3 +4,9 @@
     align-items: center; */
     margin-bottom: 20px;
 }
+
+.catalog .buttons button{
+    width: 100px;
+    text-transform: capitalize;
+    margin-left: 10px;
+}

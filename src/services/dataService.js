@@ -1,9 +1,59 @@
 var catalog = [
     {
         "title":"milk",
-        "category":"beverages",
+        "category":"diary",
         "price":8.99,
-        "image":"",
-        "id":"1000",
+        "image":"milk.jpeg",
+        "_id":"1000",
+    },
+    {
+        "title":"eggs",
+        "category":"diary",
+        "price":3.99,
+        "image":"eggs.jpeg",
+        "_id":"1001",
+    },
+    {
+        "title":"carrots",
+        "category":"shopping",
+        "price":5.99,
+        "image":"carrots.jpg",
+        "_id":"1002",
+    },
+    {
+        "title":"coffee",
+        "category":"dairy",
+        "price":3.99,
+        "image":"coffee.jpg",
+        "_id":"1003",
+    },
+    {
+        "title":"cereal",
+        "category":"dairy",
+        "price":3.99,
+        "image":"cereal.jpg",
+        "_id":"1004",
+    },
+    {
+        "title":"cheese",
+        "category":"dairy",
+        "price":1.99,
+        "image":"cheese.webp",
+        "_id":"1005",
+    },
+    {
+        "title":"apples",
+        "category":"shopping",
+        "price":4.99,
+        "image":'apples.jpg',
+        "_id":"1006",
     },
 ];
+
+class DataService {
+    getProducts(){
+        return catalog;    
+    }
+}
+
+export default DataService;

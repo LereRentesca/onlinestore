@@ -1,29 +1,29 @@
 import './styles/quantityPicker.css';
 import { useState } from 'react';
 
-function QuantityPicker(){
+function QuantityPicker(props){
 
     let [i,setI] = useState(1);
      
     function decrease(){
         if(i>0){
             setI(--i);
+            props.onChange(i);
         }
-        console.log("clicked event decrease " + i);
     }
 
     function increase(){
         if(i>=0){
             setI(++i);
+            props.onChange(i);
         }
-        console.log("clicked event increase " + i);
     }
 
     return (
         <div className="qt-picker">
-            <button disabled={i===0} onClick={decrease}> - </button>
+            <button type="button" disabled={i===0} onClick={decrease} className="btn btn-success">-</button>
             <label>{i}</label>
-            <button onClick={increase}> + </button>
+            <button type="button" onClick={increase} className="btn btn-success">+</button>
         </div>
     );
 }

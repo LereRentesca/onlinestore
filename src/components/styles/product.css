@@ -2,16 +2,52 @@
     border: 2px solid black;
     display: inline-block;
     width: 240px;
-    height: 320px;
+    height: 380px;
     margin: 5px 7px;
     border-radius: 10px;
     background-color: rgb(179, 233, 179);
 }
 
 .product img{
-    margin-bottom: 30px;
+    width:70%;
+    height: 50%;
+    margin-bottom:5px;
+}
+
+.picker{
+    margin-bottom: 5px;
+}
+
+.add button{
+    border-color:rgb(64, 203, 64) ;
+    background-color: rgb(92, 211, 92);
+    color: black;
+    width: 90px;
+}
+.add button:hover{
+    border-color: green;
+    background-color: green;
+}
+
+.product h5{
+    text-transform: capitalize;
+    font-weight: bolder;
 }
 
 .product:hover{
     border-color: green;
+}
+
+.prices{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+@media (max-width:400px){
+    .product{
+        width: 87%;
+        margin-left: 2%;
+        height: auto;
+    }
 }
