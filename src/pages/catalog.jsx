@@ -2,6 +2,7 @@ import Product from '../components/product';
 import './styles/catalog.css';
 import { useEffect,useState } from 'react';
 import DataService from '../services/dataService';
+import { BrowserRouter,Routes, Route } from 'react-router-dom';
 
 function Catalog(){
 
@@ -49,7 +50,7 @@ function Catalog(){
             <br/>
             {prodsToDisplay.map((p)=>(
                 <Product key={p._id} data={p}></Product>
-            ))}
+            ))} 
         </div>
     );
 }

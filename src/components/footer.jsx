@@ -2,7 +2,9 @@ import './styles/footer.css';
 
 function Footer(){
     return (
-        <div>Luis E. Renteria</div>
+        <div className='card-footer text-body-secondary'>
+            Luis E. Renteria
+        </div>
     );
 }
 

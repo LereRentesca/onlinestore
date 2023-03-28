@@ -1,0 +1,35 @@
+.Admin{
+    text-align: center;
+    background-color: aliceblue;
+    min-height: 85vh;
+    padding: 10px 30px;
+}
+
+.Admin main{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.Admin #products{
+    flex:2;
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid #d4d0d0;
+    margin-right: 40px;
+    border-radius: 4px;
+    max-width: 400px;
+}
+
+.Admin #coupons{
+    flex:1;
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid #d4d0d0;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.Admin form{
+    text-align: left;
+}

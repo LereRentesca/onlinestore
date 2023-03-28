@@ -15,7 +15,7 @@ function QuantityPicker(props){
     function increase(){
         if(i>=0){
             setI(++i);
-            props.onChange(i);
+            props.onChange(i);  
         }
     }
 

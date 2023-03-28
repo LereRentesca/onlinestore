@@ -1,10 +1,13 @@
 import QuantityPicker from './quantityPicker';
 import './styles/product.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
+import GlobalContext from '../provider/globalContext';
 
 function Product(attributes){
 
     const [quantity,setQuantity] = useState([1]);
+    const [prodsForCart,setProdsForCart] = useState({});
+    const addToCart = useContext(GlobalContext).addToCart;
 
     useEffect(function(){
         console.log("im a product");
@@ -12,6 +15,12 @@ function Product(attributes){
 
     function onQuantityChange(qty){
         setQuantity(qty);
+    }
+
+    function handleAddClick(){
+        let prodsForCart = {...attributes.data};
+        prodsForCart.quantity = quantity;
+        addToCart(prodsForCart);
     }
 
     return(
@@ -25,8 +34,8 @@ function Product(attributes){
             <div className='picker'>
                 <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
             </div>
-            <div className='add'>
-                <button className='btn btn-primary'>Add</button>
+            <div className='add'>   
+                <button className='btn btn-primary' onClick={handleAddClick}>Add</button>
             </div>
         </div>
     );
