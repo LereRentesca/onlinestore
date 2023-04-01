@@ -1,0 +1,9 @@
+h5:first-child{
+    margin: 20px;
+}
+
+.total{
+    display: flex;
+    justify-content: end;
+    margin: 0% 6%;
+}

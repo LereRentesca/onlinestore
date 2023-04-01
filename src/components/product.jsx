@@ -5,7 +5,7 @@ import GlobalContext from '../provider/globalContext';
 
 function Product(attributes){
 
-    const [quantity,setQuantity] = useState([1]);
+    const [quantity,setQuantity] = useState(1);
     const [prodsForCart,setProdsForCart] = useState({});
     const addToCart = useContext(GlobalContext).addToCart;
 

@@ -1,0 +1,45 @@
+h3{
+    text-transform: capitalize;
+}
+
+.displayCart{
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 50px 0 50px;
+    background-color: #c0c1c238;
+    margin: 1% 5%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.items img{
+    width:100px;
+    height:auto;
+    object-fit:cover;
+    object-position:50% 50%;
+    margin-bottom: 10px;
+}
+
+.left{
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.middle{
+    flex: 20%;
+}
+
+.right{
+    flex:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+}
