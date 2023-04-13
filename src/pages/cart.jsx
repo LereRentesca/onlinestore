@@ -16,7 +16,9 @@ function Cart(){
 
     return(
         <div>
-            <h5>These are your products</h5>
+            <div className='title'>
+                <h5>These are your products</h5>
+            </div>
             {cart.map((prod) => (
                 <CartItem key={prod._id} data={prod}></CartItem>
             ))}

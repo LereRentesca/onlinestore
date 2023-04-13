@@ -6,3 +6,51 @@
 .cart span{
     margin-right: 10px;
 }
+
+.navigation{
+    position: fixed;
+    width: 100%;
+}
+
+nav{
+    background-color: rgba(104, 0, 0, 0.6);
+    color: white;
+}
+
+nav .menu{
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .left{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+nav .middle{
+    flex: 1;
+}
+
+nav .right{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+nav .right div{
+    margin-left: 20px;
+}
+
+li{
+    margin-right: 20px;
+}
+
+.main-title{
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 5px;
+}

@@ -14,9 +14,9 @@ function Catalog(){
         loadCatalog();
     }, []);
 
-    function loadCatalog(){
+    async function loadCatalog(){
         let service = new DataService();
-        let prods = service.getProducts();
+        let prods = await service.getProducts();
         setProducts(prods);
         setProdsToDisplay(prods);
         let cats=["dairy","shopping"];
@@ -45,7 +45,7 @@ function Catalog(){
             <br/>
             <div className='buttons'>
                 <button onClick={clearFilter} className='btn btn-dark btn-filter'>All</button>
-                {category.map((c)=>(<button onClick={()=>filter(c)} className='btn btn-success btn-filter'>{c}</button>))}
+                {category.map((c)=>(<button onClick={()=>filter(c)} className='btn btn-secondary btn-filter'>{c}</button>))}
             </div>
             <br/>
             {prodsToDisplay.map((p)=>(

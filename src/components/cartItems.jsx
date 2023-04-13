@@ -1,6 +1,7 @@
 import './styles/cartItem.css';
 
 function CartItem(attributes){
+
     return(
         console.log(attributes),
 
@@ -15,7 +16,7 @@ function CartItem(attributes){
                 </div>
                 <div className='right'>
                     <p>Price: ${attributes.data.price}</p>
-                    <p>Sub-total: ${attributes.data.price*attributes.data.quantity}</p>
+                    <p>Sub-total: ${(attributes.data.price*attributes.data.quantity).toFixed(2)}</p>
                 </div>
             </div>
         </div>

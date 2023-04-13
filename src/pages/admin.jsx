@@ -1,4 +1,5 @@
 import './styles/admin.css';
+import DataService from '../services/dataService';
 import {useState} from 'react';
 
 function Admin(){
@@ -24,8 +25,12 @@ function Admin(){
         setCoupon(copy);
     }
 
-    function saveProduct(){
-        console.log(product);
+    async function saveProduct(){
+        let copy = {...product};
+        copy['price'] = parseFloat(copy['price']);
+        setProduct(copy);
+        let service = new DataService();
+        return await service.saveProduct(product);
     }
 
     function saveCoupon(){

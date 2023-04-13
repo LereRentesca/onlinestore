@@ -1,11 +1,12 @@
 .product{
-    border: 2px solid black;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
     display: inline-block;
     width: 240px;
     height: 380px;
     margin: 5px 7px;
     border-radius: 10px;
-    background-color: rgb(179, 233, 179);
+    background-color: rgba(104,0,0,0.7);
 }
 
 .product img{
@@ -19,14 +20,14 @@
 }
 
 .add button{
-    border-color:rgb(64, 203, 64) ;
-    background-color: rgb(92, 211, 92);
+    border-color:rgb(151, 49, 49) ;
+    background-color: rgb(189, 43, 43);
     color: black;
     width: 90px;
 }
 .add button:hover{
-    border-color: green;
-    background-color: green;
+    border-color: #680000;
+    background-color: #680000;
 }
 
 .product h5{
@@ -35,7 +36,7 @@
 }
 
 .product:hover{
-    border-color: green;
+    border-color: #b50000;
 }
 
 .prices{

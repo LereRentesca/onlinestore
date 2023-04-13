@@ -1,8 +1,12 @@
 .Admin{
     text-align: center;
-    background-color: aliceblue;
     min-height: 85vh;
-    padding: 10px 30px;
+    padding: 70px 30px;
+}
+
+.Admin h1{
+    text-align: left;
+    padding-left: 100px;
 }
 
 .Admin main{
